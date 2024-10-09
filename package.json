@@ -1,7 +1,9 @@
 {
-  "name": "asm-nx-workspace",
+  "name": "asafarim-workspace",
   "packageManager": "yarn@4.1.1",
   "devDependencies": {
+    "@nx-dotnet/core": "^2.4.5",
+    "@nx/js": "19.8.4",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
     "nx": "19.8.4",
@@ -15,5 +17,13 @@
     "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "prepare": "nx g @nx-dotnet/core:restore",
+    "build": "nx g @nx-dotnet/core:build",
+    "build:prod": "nx g @nx-dotnet/core:build --configuration=production",
+    "start": "nx g @nx-dotnet/core:serve",
+    "test": "nx g @nx-dotnet/core:test",
+    "lint": "nx g @nx-dotnet/core:lint"
   }
 }

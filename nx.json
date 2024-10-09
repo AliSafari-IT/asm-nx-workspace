@@ -1,5 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "defaultBase": "main",
-  "nxCloudId": "6706ca29e6cbf65cfa3bb54a"
+  "nxCloudId": "6706ca29e6cbf65cfa3bb54a",
+  "plugins": ["@nx-dotnet/core"]
 }
